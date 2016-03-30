@@ -64,4 +64,4 @@ class TestFunctionalPointPattern(unittest.TestCase):
         significant = analytics.check_significant(lower, upper, observed)
         self.assertTrue(significant)
 
-        self.assertTrue(True)
+        self.assertTrue(True) 
