@@ -57,6 +57,23 @@ def average_nearest_neighbor_distance(points):
     mean_d = totalOfDistances/len(points)
 
     return mean_d
+    
+ def euclidean_distance(a, b):
+     """
+     Compute the Euclidean distance between two points
+     Parameters
+     ----------
+     a : tuple
+         A point in the form (x,y)
+     b : tuple
+         A point in the form (x,y)
+     Returns
+     -------
+     distance : float
+                The Euclidean distance between the two points
+     """
+     distance = math.sqrt((a[0] - b[0])**2 + (a[1] - b[1])**2)
+     return distance
 
 
 def minimum_bounding_rectangle(points):
