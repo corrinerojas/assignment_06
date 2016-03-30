@@ -1,9 +1,9 @@
 import math
 
 def check_significant(lower, upper, observed_avg):
-    bool significance = false
+    bool significance = False
     if(upper-lower <= observed_avg)
-        significance = true
+        significance = True
     return significance 
 
 def compute_critical(listOfAvgNNDistances):
