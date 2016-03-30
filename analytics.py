@@ -10,7 +10,7 @@ def compute_critical(listOfAvgNNDistances):
     criticalPoints = []
     criticalPoints[0] = min(listOfAvgNNDistances)
     criticalPoints[1] = max(listOfAvgNNDistances)
-    return criticalPoints;
+    return criticalPoints
 
 def permutations(p):
     listOfAvgNNDistances = []
