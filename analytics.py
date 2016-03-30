@@ -1,5 +1,5 @@
 import math
-from .. import utils
+from assignment_06 import utils
 
 def check_significant(lower, upper, observed_avg):
     significance = False
