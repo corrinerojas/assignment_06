@@ -1,0 +1,46 @@
+import unittest
+import random
+
+from .. import point
+from collections import Counter
+
+class TestPoint(unittest.TestCase):
+
+    point = Point(2,4)
+
+    def point_Test(self):
+        self.assertEqual(2, point.x)
+        self.assertEqual(4, point.y)
+
+    def coincidence_Test(self):
+        self.assertTrue(point.check_coincidence(2,4))
+        self.assertFalse(point.check_coincidence(3,5))
+
+    def shift_point_Test(self):
+        new_point = Point(2,1)
+        self.assertEqual((4,5), (point.x,point.y))
+
+        
+    def marks_Test(self):
+        random.seed(12345)
+        marks = ['periwinkle', 'eggshell', 'lavender', 'chiffon']
+        i = 0
+
+        points = []
+        countArray = []
+
+        while i < 15:
+            new_added_point = Point(random.randint(0,9), random.randint(0,9), random.choice(marks))
+            points.append(new_point)
+            
+        for counter in points:
+            
+            Counter(marks)
+            Counter({'periwinkle': 1, 'eggshell': 2, 'lavender': 3, 'chiffon': 4})
+            
+
+            
+                
+
+            
+        
